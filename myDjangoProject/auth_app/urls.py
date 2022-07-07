@@ -1,9 +1,9 @@
 
 
 from django.urls import path
-from views import register
+from auth_app import views
 
 urlpatterns = [
-    path('register/', register)
+    path('register/', views.register)
 
 ]

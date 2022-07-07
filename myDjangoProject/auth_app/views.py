@@ -1,7 +1,11 @@
-from http.client import HTTPResponse
+from django.http import HttpResponse
 from django.shortcuts import render
 
 # Create your views here.
 
-def register(response):
-        return response.HTTPResponse("Register User")
+def register(request):
+        # return HttpResponse("Register User")
+        return render(request, 'auth_app/register.html')
+
+
+        
