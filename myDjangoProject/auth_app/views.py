@@ -6,7 +6,7 @@ from django.shortcuts import render
 
 def register(request):
         # return HttpResponse("Register User")
-        return render(request, 'auth_app/register.html')
+        return render(request, 'auth_app/html/register/register.html')
 
 
         
